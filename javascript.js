@@ -1,3 +1,5 @@
+let color = 0;
+
 function createBoard() {
     let board = document.querySelector(".board");
     board.style.gridTemplateRows = 'repeat(16, 1fr)';
@@ -17,5 +19,9 @@ start.addEventListener('click', event => {
 });
 
 function colorSquare() {
-    this.style.backgroundColor = "black";
+    this.style.backgroundColor = color;
+}
+
+function changeColor(choice) {
+    color = choice;
 }
