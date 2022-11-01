@@ -5,7 +5,8 @@ function createBoard() {
     
     for (let i = 0; i < 256; i++) {
         let square = document.createElement('div')
-        square.style.backgroundColor = 'blue';
+        square.addEventListener("mouseover", colorSquare);
+        square.style.backgroundColor = 'white';
         board.insertAdjacentElement("beforeend", square);
     }
 }
@@ -14,3 +15,7 @@ let start = document.getElementById("start");
 start.addEventListener('click', event => {
     createBoard();
 });
+
+function colorSquare() {
+    this.style.backgroundColor = "black";
+}
