@@ -1,11 +1,16 @@
-let color = 0;
+createBoard(16);
 
-function createBoard() {
+let color = "black";
+
+function createBoard(size) {
     let board = document.querySelector(".board");
-    board.style.gridTemplateRows = 'repeat(16, 1fr)';
-    board.style.gridTemplateColumns = 'repeat(16, 1fr)';
+    let squares = board.querySelectorAll("div");
+    squares.forEach((div) => div.remove());
+    board.style.gridTemplateRows = `repeat(${size} , 1fr)`;
+    board.style.gridTemplateColumns = `repeat(${size} , 1fr)`;
     
-    for (let i = 0; i < 256; i++) {
+    let amount = size * size;
+    for (let i = 0; i < amount; i++) {
         let square = document.createElement('div')
         square.addEventListener("mouseover", colorSquare);
         square.style.backgroundColor = 'white';
@@ -15,11 +20,19 @@ function createBoard() {
 
 let start = document.getElementById("start");
 start.addEventListener('click', event => {
-    createBoard();
+    createBoard(size);
 });
 
 function colorSquare() {
     this.style.backgroundColor = color;
+}
+
+function changeSize(input) {
+    if (input >= 2 && input <= 100)
+    createBoard(input);
+    else {
+        alert("Too big!");
+    }
 }
 
 function changeColor(choice) {

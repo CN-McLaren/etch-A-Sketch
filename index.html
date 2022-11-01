@@ -10,10 +10,10 @@
         <div class="container">
             <div class="board"></div>
             <button id="start">Start</button>
-            <button id="reset">Reset</button>
             <button onclick = "changeColor('black')">Black</button>
             <button onclick = "changeColor('blue')">Blue</button>
             <button onclick = "changeColor('white')">White</button>
+            <input type="text" placeholder="size of board" value="16" onchange="changeSize(this.value)"/>
         </div>
     </body>
 </html>

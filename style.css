@@ -2,11 +2,10 @@
     width:500px;
     height:500px;
     display:grid;
-    
 }
 
 .grid {
     margin:0;
     padding:0;
-    border:black;
 }
+
