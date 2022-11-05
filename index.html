@@ -7,19 +7,32 @@
         <script src="javascript.js" defer></script>
     </head>
     <body>
-        <header>
-            <h1>Etch-A-Sketch</h1>
-        </header>
-        <div class="container">
-            <div class="board"></div>
-            <div class="buttons">
-            <button id="start">Start</button>
-            <button onclick = "resetBoard()">Reset</button>
-            <button onclick = "changeColor('black')">Black</button>
-            <button onclick = "changeColor('blue')">Blue</button>
-            <button onclick = "changeColor('white')">White</button>
-            <input type="text" placeholder="size of board" value="16" onchange="changeSize(this.value)"/>
-            </div>
+        <header><h1>Etch-A-Sketch</h1></header>
+
+        <div class="mainContent">
+            <div class="container">
+                <div class="board"></div>
+                <div class="buttons">
+                    <button id="start">Start</button>
+                    <button onclick = "resetBoard()">Reset</button>
+                    <button onclick = "changeColor('black')">Black</button>
+                    <button onclick = "changeColor('blue')">Blue</button>
+                    <button onclick = "changeColor('white')">White</button>
+                </div>
         </div>
+        <div class="slideContainer">
+            <p>Board Size: <span id="boardValue"></span></p>
+            <input type="range" placeholder="size of board" min="2" max="100" value="16" class="slider" id="boardRange" onchange="changeSize(this.value)"/>
+        </div>
+        </div>
+    <script>
+    let slider = document.getElementById("boardRange");
+    let output = document.getElementById("boardValue");
+    output.innerHTML = slider.value;
+    slider.oninput = function() {
+    output.innerHTML = this.value;
+    }
+    </script>
     </body>
+
 </html>
