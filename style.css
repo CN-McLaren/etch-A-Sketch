@@ -1,5 +1,21 @@
 h1 {
     display:flex;
+    justify-content:center;
+    color:#D7CEC7;
+}
+
+body {
+    background-color:#565656;
+}
+
+button {
+    background-color:#76323F;
+    color:#D7CEC7;
+}
+
+p {
+    color:#D7CEC7;
+    display: flex;
     justify-content: center;
 }
 
@@ -11,7 +27,7 @@ h1 {
 .container {
     display:flex;
     flex-direction: column;
-    align-items: center;
+    align-items: space-between;
 }
 
 .board {
@@ -20,6 +36,7 @@ h1 {
     display:grid;
     border:1px solid #000;
     margin-left: 150px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.7);
 }
 
 .grid {
@@ -29,6 +46,12 @@ h1 {
 
 .buttons {
     margin-top: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    margin:6px;
 }
 
 .slideContainer {
