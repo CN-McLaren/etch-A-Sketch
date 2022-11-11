@@ -18,11 +18,6 @@ function createBoard(size) {
     }
 }
 
-let start = document.getElementById("start");
-start.addEventListener('click', event => {
-    createBoard(size);
-});
-
 function colorSquare() {
     this.style.backgroundColor = color;
 }
