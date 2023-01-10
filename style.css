@@ -1,5 +1,17 @@
+html {
+    height:100%;
+    background-color:#fffc99;
+    background-image:
+    radial-gradient(at 77% 61%, hsla(246,68%,71%,1) 0px, transparent 50%),
+    radial-gradient(at 13% 90%, hsla(82,73%,78%,1) 0px, transparent 50%),
+    radial-gradient(at 21% 92%, hsla(230,71%,68%,1) 0px, transparent 50%),
+    radial-gradient(at 73% 9%, hsla(344,74%,61%,1) 0px, transparent 50%),
+    radial-gradient(at 29% 67%, hsla(332,91%,67%,1) 0px, transparent 50%),
+    radial-gradient(at 19% 12%, hsla(282,64%,60%,1) 0px, transparent 50%),
+    radial-gradient(at 95% 94%, hsla(69,81%,62%,1) 0px, transparent 50%);
+}
+
 body {  
-    background-color: grey;
     position: absolute;
     top: 50%;
     left: 50%;
