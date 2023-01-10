@@ -1,19 +1,14 @@
-h1 {
-    display:flex;
-    justify-content:center;
-    color:#D7CEC7;
-}
-
-body {
-    background-color:#565656;
+body {  
+    background-color: grey;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
-button {
-    background-color:#76323F;
+h1 {
+    display:flex;
+    justify-content:center;
     color:#D7CEC7;
 }
 
@@ -21,6 +16,12 @@ p {
     color:#D7CEC7;
     display: flex;
     justify-content: center;
+}
+
+button {
+    background-color:#76323F;
+    color:#D7CEC7;
+    margin:6px;
 }
 
 .mainContent {
@@ -52,10 +53,6 @@ p {
     margin-top: 15px;
     display: flex;
     justify-content: center;
-}
-
-button {
-    margin:6px;
 }
 
 .slideContainer {

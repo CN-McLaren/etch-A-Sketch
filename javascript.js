@@ -25,9 +25,6 @@ function colorSquare() {
 function changeSize(input) {
     if (input >= 2 && input <= 100)
     createBoard(input);
-    else {
-        alert("Too big!");
-    }
 }
 
 function resetBoard() {
