@@ -21,18 +21,18 @@ body {
 h1 {
     display:flex;
     justify-content:center;
-    color:#D7CEC7;
+    color:whitesmoke
 }
 
 p {
-    color:#D7CEC7;
+    color:white;
     display: flex;
     justify-content: center;
 }
 
 button {
     background-color:#76323F;
-    color:#D7CEC7;
+    color:white;
     margin:6px;
 }
 
